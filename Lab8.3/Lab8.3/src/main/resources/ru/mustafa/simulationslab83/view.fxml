@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.vorotov.simulationslab83.HelloController">
+    <children>
+        <ToolBar prefHeight="40.0" prefWidth="200.0">
+            <items>
+                <Button mnemonicParsing="false" onAction="#onStartButtonClick" text="Start" />
+                <TextField fx:id="prob1Field" promptText="prob 1" />
+                <TextField fx:id="prob2Field" promptText="prob 2" />
+                <TextField fx:id="prob3Field" promptText="prob 3" />
+                <TextField fx:id="prob4Field" editable="false" promptText="prob 4( auto)" />
+                <TextField fx:id="trialsField" promptText="trials" />
+            </items>
+        </ToolBar>
+        <BarChart fx:id="barChart">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </BarChart>
+    </children>
+</VBox>
